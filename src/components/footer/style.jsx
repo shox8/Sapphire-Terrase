@@ -6,7 +6,7 @@ export const Block = styled.div`
   background-color: #2c2d2d;
   hr {
     margin-block: 40px;
-    border: 0.5px solid #d8d8d8;
+    border: 0.1px solid #797979;
   }
   a {
     color: #fff;

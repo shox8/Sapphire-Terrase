@@ -11,6 +11,10 @@ export const Block = styled.div`
   justify-content: space-between;
   backdrop-filter: blur(20px);
   align-items: start;
+  z-index: 10;
+  img {
+    cursor: pointer;
+  }
   .line {
     width: 100%;
     display: flex;
@@ -79,7 +83,7 @@ export const Block = styled.div`
     }
     @keyframes closing {
       from {
-        width: ${(p) => (p.open ? "100%" : "0")};
+        width: 100%;
       }
       to {
         width: 0;
@@ -150,7 +154,7 @@ export const Block = styled.div`
           justify-content: space-between;
           align-items: end;
           p {
-            text-align: center;
+            text-align: end;
           }
         }
         .l:nth-child(2) {

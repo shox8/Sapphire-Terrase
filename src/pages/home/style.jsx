@@ -20,7 +20,7 @@ export const Block = styled.div`
   }
   hr {
     margin-block: 40px;
-    border: 0.5px solid #d8d8d8;
+    border: 0.1px solid #d8d8d8;
   }
   .first {
     margin-top: 70px;

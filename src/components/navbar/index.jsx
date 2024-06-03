@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Block } from "./style";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoMdHeart } from "react-icons/io";
 import { FaGripLines } from "react-icons/fa6";
@@ -8,12 +8,16 @@ import { RxCross2 } from "react-icons/rx";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const obj = (path) => ({ onClick: () => setOpen(!open), to: `/${path}` });
+  const obj = (path) => ({ onClick: () => setOpen(false), to: `/${path}` });
 
   return (
     <Block open={open}>
-      <img src={require("../../assets/menu/logo.png")} />
+      <img
+        src={require("../../assets/menu/logo.png")}
+        onClick={() => navigate("/")}
+      />
       <div className="line">
         <div className="links">
           <Link {...obj("apartments")}>Apartments</Link>
