@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const Block = styled.div`
-  padding: 20px;
+  padding-block: 20px;
+  padding-inline: 50px;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #ffffffa0;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
+  backdrop-filter: blur(20px);
   align-items: start;
   .line {
     width: 100%;
@@ -62,6 +64,9 @@ export const Block = styled.div`
     height: ${(p) => (p.open ? "auto" : "70px")};
     padding: 10px;
     overflow: hidden;
+    .services {
+      display: none !important;
+    }
     img {
       height: 30px;
       margin-top: 10px;
