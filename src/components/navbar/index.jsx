@@ -9,15 +9,17 @@ import { RxCross2 } from "react-icons/rx";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const obj = (path) => ({ onClick: () => setOpen(!open), to: `/${path}` });
+
   return (
     <Block open={open}>
       <img src={require("../../assets/menu/logo.png")} />
       <div className="line">
         <div className="links">
-          <Link to="/apartments">Apartments</Link>
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/contacts">Contacts</Link>
+          <Link {...obj("apartments")}>Apartments</Link>
+          <Link {...obj("gallery")}>Gallery</Link>
+          <Link {...obj("about")}>About Us</Link>
+          <Link {...obj("contacts")}>Contacts</Link>
         </div>
         <div className="socials">
           <Link to="https://t.me" target="_blank">
@@ -68,11 +70,11 @@ export default function Navbar() {
             </div>
           </div>
           <div className="links">
-            <Link to="/">Home</Link>
-            <Link to="/apartments">Apartments</Link>
-            <Link to="/gallery">Gallery</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/contacts">Contacts</Link>
+            <Link {...obj("")}>Home</Link>
+            <Link {...obj("apartments")}>Apartments</Link>
+            <Link {...obj("gallery")}>Gallery</Link>
+            <Link {...obj("about")}>About Us</Link>
+            <Link {...obj("contacts")}>Contacts</Link>
           </div>
           <div className="footer">
             <div className="l">
