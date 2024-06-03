@@ -93,6 +93,14 @@ export const Block = styled.div`
       }
     }
   }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      font-size: 30px;
+    }
+  }
   @media screen and (max-width: 700px) {
     padding: 10px;
     .first,

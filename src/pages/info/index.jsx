@@ -3,7 +3,7 @@ import { Block } from "./style";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoMdHeart } from "react-icons/io";
-import { FaFile, FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { FaFile, FaArrowLeft, FaArrowRight, FaPlus } from "react-icons/fa6";
 
 export default function Info() {
   return (
@@ -70,6 +70,17 @@ export default function Info() {
           <p>Balcony</p>
         </div>
       </div>
+      <hr />
+      <div className="content">
+        <p>Documentation</p>
+        <FaPlus />
+      </div>
+      <hr />
+      <div className="content">
+        <p>Constuction Dynamics</p>
+        <FaPlus />
+      </div>
+      <hr />
     </Block>
   );
 }
