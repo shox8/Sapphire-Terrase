@@ -8,105 +8,6 @@ export const Block = styled.div`
     margin-block: 40px;
     border: 0.1px solid #d8d8d8;
   }
-  .headImage {
-    width: 100%;
-    position: relative;
-    .image {
-      width: 100%;
-    }
-    .circle-1 {
-      position: absolute;
-      top: 35%;
-      left: 22%;
-    }
-    .circle-2 {
-      position: absolute;
-      top: 38%;
-      left: 48%;
-    }
-    .indicator {
-      position: absolute;
-      top: 30%;
-      right: 15%;
-      img:nth-child(2) {
-        transform: translate(-49.5%, -40%);
-      }
-      .line {
-        height: 1px;
-        background-color: #fff;
-        margin-top: -130px;
-        transform: translateX(73%);
-      }
-      .box {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        transform: translate(130px, 20px);
-        font-size: 9px;
-        div {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 20px;
-        }
-      }
-    }
-  }
-  .title {
-    margin-top: 50px;
-    font-size: 40px;
-    font-weight: 100;
-  }
-  .filter {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    button {
-      height: 30px;
-      border: none;
-      outline: none;
-      padding-inline: 15px;
-      border-radius: 35px;
-      background-color: #fff;
-      border: 1px solid;
-      cursor: pointer;
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-    .mobile {
-      width: 100%;
-      display: none;
-      justify-content: space-between;
-    }
-    .active {
-      background-color: #2c2d2d;
-      color: #fff;
-      border: none;
-    }
-    .column {
-      display: flex;
-      flex-direction: column;
-      gap: 35px;
-      .blog {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        .items {
-          display: flex;
-          gap: 10px;
-          .active {
-            background-color: #2c2d2d;
-            color: #fff;
-            border: none;
-          }
-        }
-      }
-    }
-  }
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -126,13 +27,16 @@ export const Block = styled.div`
         align-items: center;
         button {
           height: 30px;
+          width: 30px;
           border: none;
           outline: none;
           padding-inline: 15px;
           border-radius: 35px;
-          background-color: #fff;
-          border: 1px solid;
           cursor: pointer;
+          background-color: #2c2d2d;
+          color: #fff;
+          border: none;
+          padding: 8px;
         }
       }
       img {

@@ -50,7 +50,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="icons media-icons">
-        <IoMdHeart />
+        <IoMdHeart onClick={() => navigate("/saved")} />
         <div onClick={() => setOpen(!open)}>
           {open ? <RxCross2 /> : <FaGripLines />}
         </div>

@@ -131,7 +131,7 @@ export default function Apartments() {
               <p>Rooms 2</p>
               <p>65,9 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
@@ -153,7 +153,7 @@ export default function Apartments() {
               <p>Rooms 3</p>
               <p>80,7 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
@@ -175,7 +175,7 @@ export default function Apartments() {
               <p>Rooms 3</p>
               <p>85,3 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
@@ -197,7 +197,7 @@ export default function Apartments() {
               <p>Rooms 3</p>
               <p>85,3 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
@@ -219,7 +219,7 @@ export default function Apartments() {
               <p>Rooms 4</p>
               <p>109 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
@@ -241,7 +241,7 @@ export default function Apartments() {
               <p>Rooms 4</p>
               <p>115 m2</p>
             </div>
-            <Link to="/">
+            <Link to="/info">
               BOOK NOW <GoArrowUpRight />
             </Link>
           </div>
