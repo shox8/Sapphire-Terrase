@@ -62,13 +62,13 @@ export const Block = styled.div`
   .menu {
     position: absolute;
     height: 100vh;
-    width: 100%;
     top: 0;
+    width: 0;
+    right: 0;
     animation: ${(p) => (p.open ? "opening" : "closing")} 0.5s linear forwards;
     background-color: #f4dfc1;
     display: flex;
     overflow: hidden;
-    right: 0;
     @keyframes opening {
       from {
         width: 0;
@@ -79,7 +79,7 @@ export const Block = styled.div`
     }
     @keyframes closing {
       from {
-        width: 100%;
+        width: ${(p) => (p.open ? "100%" : "0")};
       }
       to {
         width: 0;
