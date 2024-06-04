@@ -20,11 +20,12 @@ export const Block = styled.div`
       .blog {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         font-size: 15px;
         white-space: nowrap;
         p {
           margin-bottom: 10px;
+          color: #5b5b5b;
         }
       }
       .blog:nth-child(1) {

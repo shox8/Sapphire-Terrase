@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <Block>
       <div className="services">
-        <Link to="/">
+        <Link to="/call">
           Request Call <GoArrowUpRight />
         </Link>
-        <Link to="/">
+        <Link to="/apartments">
           Choose an apartment <GoArrowUpRight />
         </Link>
       </div>

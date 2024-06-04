@@ -69,7 +69,7 @@ export const Block = styled.div`
     top: 0;
     width: 0;
     right: 0;
-    animation: ${(p) => (p.open ? "opening" : "closing")} 0.5s linear forwards;
+    animation: ${(p) => (p.open ? "opening" : "closing")} 0.3s linear forwards;
     background-color: #f4dfc1;
     display: flex;
     overflow: hidden;
