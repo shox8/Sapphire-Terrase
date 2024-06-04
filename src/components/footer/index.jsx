@@ -34,21 +34,23 @@ export default function Footer() {
             <b>HELLO.SAPPHIRE.@GMAIL.COM</b>
           </div>
         </div>
-        <div className="form">
-          <p>
-            Leave your contacts for <br /> more information
-          </p>
-          <input type="text" placeholder="Abdurashid Zukhuri" />
-          <input type="text" placeholder="+998 94 200 20 02" />
-          <Link to="/">
-            SEND <GoArrowUpRight />
-          </Link>
-        </div>
-        <div className="languages">
-          <div></div>
-          <div>
-            <span>EN</span>
-            <span>UZ</span>
+        <div className="second">
+          <div className="form">
+            <p>
+              Leave your contacts for <br /> more information
+            </p>
+            <input type="text" placeholder="Abdurashid Zukhuri" />
+            <input type="text" placeholder="+998 94 200 20 02" />
+            <Link to="/">
+              SEND <GoArrowUpRight />
+            </Link>
+          </div>
+          <div className="languages">
+            <div></div>
+            <div>
+              <span>EN</span>
+              <span>UZ</span>
+            </div>
           </div>
         </div>
       </div>

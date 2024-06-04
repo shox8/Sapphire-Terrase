@@ -182,15 +182,30 @@ export const Block = styled.div`
       display: none;
     }
     .menu {
+      flex-direction: column-reverse;
+      justify-content: space-between;
       .video {
-        display: none;
+        height: 40dvh;
+        img:nth-child(1) {
+          width: 100%;
+          height: 40dvh;
+          object-fit: cover;
+        }
+        img:nth-child(2) {
+          transform: scale(2.5);
+        }
       }
       .box {
-        padding: 20px;
+        height: 60dvh;
+        padding: 10px;
+        gap: 30px;
         .header {
           a {
             margin-left: 0 !important;
           }
+        }
+        .links {
+          font-size: 20px;
         }
         .footer {
           .l {

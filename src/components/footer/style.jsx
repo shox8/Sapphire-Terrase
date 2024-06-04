@@ -77,5 +77,8 @@ export const Block = styled.div`
       gap: 50px;
       flex-wrap: wrap;
     }
+    .languages {
+      margin-top: 20px;
+    }
   }
 `;
