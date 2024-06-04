@@ -9,6 +9,7 @@ import Saved from "./pages/saved";
 import Info from "./pages/info";
 import About from "./pages/about";
 import Contacts from "./pages/contacts";
+import Call from "./pages/call";
 
 export default function App() {
   const location = useLocation();
@@ -24,8 +25,13 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/call" element={<Call />} />
       </Routes>
-      {location.pathname !== "/contacts" ? <Footer /> : ""}
+      {location.pathname !== "/contacts" && location.pathname !== "/call" ? (
+        <Footer />
+      ) : (
+        ""
+      )}
     </>
   );
 }

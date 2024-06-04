@@ -62,8 +62,14 @@ export default function Navbar() {
         </div>
         <div className="box">
           <div className="header">
-            <img src={require("../../assets/menu/logo.png")} />
-            <Link to="/">
+            <img
+              src={require("../../assets/menu/logo.png")}
+              onClick={() => {
+                navigate("/");
+                setOpen(false);
+              }}
+            />
+            <Link to="/call">
               Request Call <GoArrowUpRight />
             </Link>
             <div className="icons">
